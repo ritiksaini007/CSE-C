@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
         
          .parent{
             height: 500px;
@@ -17,12 +21,14 @@
         .box{
             border: 2px solid red;
             background-color: rgb(251, 241, 227);
-            width: 240px;
+            width: 230px;
             height: 400px;
             text-align: center;
             border-radius: 6px;
             border: none;
             box-shadow: 2px 3px 5px lightslategray;
+            padding: 20px;  
+              
         }
         #button{
             background-color: rgb(10, 245, 6);
@@ -32,6 +38,7 @@
             border: none;
             color: aliceblue;
             box-shadow: 3px 3px 5px lightslategray;
+            
         }
         .Box{
             border: 2px solid green;
@@ -40,40 +47,58 @@
             background-color: rgb(255, 238, 0);
             display: flex;
             justify-content: center;
-            align-items: center;
-            
-            
-            /* display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: auto; */
-
-            
-            
+            align-items: center;   
+            margin-left: 60px;
+            margin-top: 30px; 
         }
+       
+        .nav-list{
+            list-style-type: none;
+            display: flex;
+            margin: 0px;
+            padding: 10px;
+            background-color: #8a2be2;
+        }
+        .nav-list li {
+            margin-right: 20px;
+        }
+
+        .nav-list a {
+            color: #75d41d;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+
+      
+ 
     </style>
 </head>
 <body>
-    <div class="NAV">
-        <a href="">PRODUCTS</a>
-        <a href="">DISCOUNT</a>
-        <a href="">OUR PARTNERS</a>
-        <a href="">ABOUT US</a>
-    </div>
+    <nav class="navbar"></nav>
+        <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#partners">Our Partners</a></li>
+            <li><a href="#discount">Discount</a></li>
+        </ul>
+    </nav>
     <div class="parent">
         <div class="box" id="Box-1">
-            <div class="Box" id="BOX-1">Box-1</div>
+            <div class="Box" id="BOX-11">Box-1</div>
             <h1>MATTE</h1>
             <p>an eye-stopping shine best for metal and other smooth surfaces</p>
             <button id="button">EXPLORE</button>
-
         </div>
         <div class="box" id="Box-2">
+            <div class="Box" id="BOX-11">Box-2</div>
             <h1>SEMI-GLASS</h1>
             <p>an eye-stopping shine best for metal and other smooth surfaces</p>
             <button id="button">EXPLORE</button>
         </div>
         <div class="box" id="Box-3">
+            <div class="Box" id="BOX-11">Box-3</div>
             <h1>HIGH-GLOSS</h1>
             <p>an eye-stopping shine best for metal and other smooth surfaces</p>
             <button id="button">EXPLORE</button>
