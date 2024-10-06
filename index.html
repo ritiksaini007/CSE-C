@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GitHub</title>
+    <style>
+        .parent{
+            height: 100px;
+            border: 6px solid rgb(255, 119, 0);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: aqua;   
+        }
+        .Box{
+            border: 2px solid green;
+            height: 80px;
+            width: 100px;
+            background-color: rgb(255, 238, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Box-1{
+            /* order: 1; */
+            align-self: flex-start;
+        }
+        #Box-2{
+            color: rgb(226, 43, 43);
+            align-self: flex-end;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <!-- emmet -->
+    <!-- .parent>.#Box-${.Box-$}*13 -->
+    <div class="parent">
+        <div class="Box" id="Box-1">Box-1</div>
+        <div class="Box" id="Box-2">Box-2</div>
+        <div class="Box" id="Box-3">Box-3</div>
+        <div class="Box" id="Box-4">Box-4</div>
+        <div class="Box" id="Box-5">Box-5</div>
+        <div class="Box" id="Box-6">Box-6</div>
+        <div class="Box" id="Box-7">Box-7</div>
+    </div>
+    <p>thsi is 
+        para 
+        third line
+    </p> 
 </body>
 </html>
